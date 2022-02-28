@@ -22,7 +22,7 @@ nginx_debs() {
     && sudo ufw allow 'OpenSSH' \
     && sudo ufw --force enable \
     && sudo systemctl enable nginx \
-    && cp ./nginx/base /etc/nginx/site-availables/ \
+    && cp ./nginx/base /etc/nginx/sites-available/ \
     && cp ./nginx/upstream.conf /etc/nginx/conf.d/
 }
 
