@@ -4,7 +4,8 @@ deps_base() {
     echo "Installing base deps"
 
     sudo apt-get update \
-    && sudo apt-get upgrade -y
+    && sudo apt-get upgrade -y \
+    && sudo apt-get install build-essential -y
 }
 
 docker_debs() {
